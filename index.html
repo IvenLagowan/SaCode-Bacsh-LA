@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web HTML,CSS dan Java</title>
+</head>
+<body>
+    <style>
+        .accordion{
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: hotpink;
+        }
+        .panel {
+            padding: 0 18px;
+            transition: 0.4s;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+    <h2>Nama Warna</h2>
+    <button class="accordion"></button>
+    <div class="panel">
+        <p>Dark grey : abu-abu tua
+            Dark yellow : kuning tua
+            Dark green : hijau tua
+            Dark brown : cokelat tua
+            Dark purple : ungu tua
+            Light blue : biru muda
+            Light grey : abu-abu muda
+            Light yellow : kuning muda
+            Light green : hijau muda
+            Light brown : cokelat muda
+            Light purple : ungu muda
+            Magenta : magenta
+            Indigo : nila
+            Azure : biru langit
+            Cyan : biru terang
+            Crimson : merah tua terang
+            Amber : kuning sawo
+            Apricot : kuning aprikot
+            Gold : emas
+            Mustard : kuning pucat
+            Navy blue : biru navy
+            Aqua : biru air
+            Beige : abu-abu kecokelatan
+            Burgundy : ungu kemerahan gelap
+            Maroon : merah marun
+            Carmine : merah terang
+            Charcoal : warna arang
+            Salmon : merah muda kekuningan
+            Denim : biru agak gelap
+            Ivory : putih gading</p>
+    </div>
+    <button class="accordion">Ivory</button>
+    <div class="panel">
+    <p>Charcoal : warna arang
+        Salmon : merah muda kekuningan
+        Denim : biru agak gelap
+        Ivory : putih gading
+        Fuchsia : merah muda terang
+        Lavender : ungu muda
+        Lilac : merah muda keunguan pudar
+        Mauve : ungu lembayung
+        Peach : warna peach
+        Silver : perak
+        Scarlet : merah padam
+        Turquoise : biru kehijauan
+        Emerald : hijau zamrud
+        Cerise : Jingga muda
+        Cinnamon : cokelat dengan kesan merah
+        Cream : krem
+        Coral : merah kekuning-kuningan
+        Ebony : hitam gelap
+        Jade : hijau lumut
+        Lime : hijau tua
+        Puce : ungu kecokelatan.</p>
+    </div>
+
+        <button class="accordion"></button>
+        <div class="panel">
+            <p>Uniknya Nama Warna dalam Bahasa Indonesia
+                Siapa yang selama ini hanya tau warna-warna 
+                dasar dalam bahasa Indonesia? Nah, ternyata di 
+                dalam bahasa Indonesa, warna-warna memiliki nama
+                 yang unik, lho. Coba setelah baca ini, kamu 
+                sebutkan warna-warna yang kamu sukai, yaa 🙂</p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++){
+                acc[i].addEventListener("click,function");
+                this.classList.toggle(active);
+                var panel = this.nextElementsBySibling;
+                if (panel.style.display === "block"){
+                    panel.style.display = "move";
+                }else {
+                     panel.style.display = "block;"
+                }
+            };
+        
+        </script>
+    
+</body>
+</html>
